@@ -48,7 +48,7 @@ Durante la primera semana con git, hemos aprendido a usar los comandos basicos d
 1. Para eso primero solo guardo los cambios desde Visual Studio (command + S)
 2. Luego ir a Source Control y ahí se verá que se acaba de realizar cambios. Si le haces clic al archivo, podrás comparar tu proyecto con su version anterior antes de los cambios
 3. Para guardar los cambios en git, solo hay que hacer clic en el + . Esto es el equivalente a git add -A
-4. Luego para registrar los cambios y mandar un mensaje, escribe en el espacio de arriba para escribir el mensaje y finalmente haces clic en Sync changes
+4. Luego para registrar los cambios y mandar un mensaje, escribe en el espacio de arriba para escribir el mensaje y finalmente haces clic en una palomita arriba del mensaje
 5. Al final haces clic en send changes para mandarlos al repositorio de Github. Esto es el equivalente de git push -u origin main
 
 Al igual que también aprendi a escribir y añadir imagenes usando Markdown para ver lo que hago.
