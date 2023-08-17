@@ -42,12 +42,8 @@ Durante la primera semana con git, hemos aprendido a usar los comandos basicos d
 
 **git restore --staged .DS_Store :** se escribe para no guardar datos adicionales, esto se realiza para evitar gastar espacio en la compu
 
-
-## Referencias
-[Markdown Guide](https://www.markdownguide.org/)
-
 ### Bitacora
-17/08/23: La semana pasada habia aprendido a usar los comandos de git en una terminal para actualizar y guardar cambios de mis proyectos. Hoy aprendí a hacer lo mismo, pero desde Visual Studio Code.
+17/08/23: La semana pasada habia aprendido a usar los comandos de git en una terminal para actualizar y guardar cambios de mis proyectos. Hoy aprendí a hacer lo mismo, pero desde Visual Studio Code. 
 
 1. Para eso primero solo guardo los cambios desde Visual Studio (command + S)
 2. Luego ir a Source Control y ahí se verá que se acaba de realizar cambios. Si le haces clic al archivo, podrás comparar tu proyecto con su version anterior antes de los cambios
@@ -55,4 +51,7 @@ Durante la primera semana con git, hemos aprendido a usar los comandos basicos d
 4. Luego para registrar los cambios y mandar un mensaje, escribe en el espacio de arriba para escribir el mensaje y finalmente haces clic en Sync changes
 5. Al final haces clic en send changes para mandarlos al repositorio de Github. Esto es el equivalente de git push -u origin main
 
+Al igual que también aprendi a escribir y añadir imagenes usando Markdown para ver lo que hago.
 
+## Referencias o guias
+[Markdown Guide](https://www.markdownguide.org/)
