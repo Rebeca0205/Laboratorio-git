@@ -54,7 +54,28 @@ Durante la primera semana con git, hemos aprendido a usar los comandos basicos d
 ![Muestra 4](/Imagenes/Captura3.png)
 5. Al final tuve que usar la terminal desde Visual Studio para mandarlo al repositorio. Solo escribí git push -u origin main
 
-Al igual que también aprendi a escribir y añadir imagenes usando Markdown para ver lo que hago.
+Al igual que también aprendi a escribir y añadir imagenes usando Markdown para ver lo que hago. Para tene runa referencia de como esta quedando el texto, solo hay que hacer clic derecho (en mi caso clic con 2 dedos) y hacer clic en "Markdown Preview Enhanced: Open Preview to the Side"
+
+## Ramas y más comandos
+Puedes tener distintas ramas para tener distintas personas que puedan realizar sus propios cambios y commits, para que al final todo pueda supervisarse para mandarlo a la rama principal.
+
+*Ejemplo:*
+Main: La rama principal del repositorio
+Testing: rama donde se supervisa si funcionan o están correctos los cambios.
+Development: rama donde se pueden hacer cambios o agregar nuevas cosas para mandarlo al main.
+
+Cuando guardas un archivo en otra rama, esta no aparecerá en otras ramas ni en el main.
+
+**git branch -a :** muestra todas las ramas en el repositorio
+
+**git checkout -b (Nombre de la nueva rama):** Se usa para crear una nueva rama y de una vez te cambia a esa rama
+
+**git checkout (nombre de la rama):** se usa para cambiarte de rama
+
+**git push -u origin (nombre de la rama):** Una vez que ya agregues los cambios y haces commit. Así se escribe un push perteneciente a la rama creada para que se mande a la pagina de GitHub.
+
+
+
 
 ## Referencias o guias
 [Markdown Guide](https://www.markdownguide.org/)
