@@ -59,22 +59,80 @@ Al igual que también aprendi a escribir y añadir imagenes usando Markdown para
 ## Ramas y más comandos
 Puedes tener distintas ramas para tener distintas personas que puedan realizar sus propios cambios y commits, para que al final todo pueda supervisarse para mandarlo a la rama principal.
 
-*Ejemplo:*
+***Ejemplo:***
 Main: La rama principal del repositorio
 Testing: rama donde se supervisa si funcionan o están correctos los cambios.
 Development: rama donde se pueden hacer cambios o agregar nuevas cosas para mandarlo al main.
 
-Cuando guardas un archivo en otra rama, esta no aparecerá en otras ramas ni en el main.
+### Proceso
+*Cuando guardas un archivo en otra rama, esta no aparecerá en otras ramas ni en el main.
 
-**git branch -a :** muestra todas las ramas en el repositorio
+1.**git branch -a :** muestra todas las ramas en el repositorio
 
-**git checkout -b (Nombre de la nueva rama):** Se usa para crear una nueva rama y de una vez te cambia a esa rama
+2.**git checkout -b (Nombre de la nueva rama):** Se usa para crear una nueva rama y de una vez te cambia a esa rama
 
-**git checkout (nombre de la rama):** se usa para cambiarte de rama
+3.**git checkout (nombre de la rama):** se usa para cambiarte de rama
 
-**git push -u origin (nombre de la rama):** Una vez que ya agregues los cambios y haces commit. Así se escribe un push perteneciente a la rama creada para que se mande a la pagina de GitHub.
+4.Luego realizas los cambios que deeses en los documento. Recuerda hacer add y commit
 
+5.**git push -u origin (nombre de la rama):** Una vez que ya agregues los cambios y haces commit. Así se escribe un push perteneciente a la rama creada para que se mande a la pagina de GitHub.
 
+6.Una vez que lo mandaste a github, te dirá que se creó una nueva rama y compare and pull request. Hace clic ahí y despues haz clic en "create pull request"
+
+![pullrequest](/Imagenes/PullRequest.PNG)
+
+7.Luego haz clic en "Merge pull request" para fucionarlo con la rama main. Si todo sale bien veras que se volverá morado y te dira que puedes borrar la rama. Es recomendable borrar la rama para no tener tantas al mismo tiempo.
+
+![mergepullrequest](/Imagenes/MergePullRequest.PNG)
+![pullexitoso](/Imagenes/PullExitoso.PNG)
+
+8.Cuando le des clic en "delete branch", la rama se borrará en GitHub, pero NO en tu compu local. Para hacerlo realiza los siguientes comandos
+
+9.**git branch -d (nombre de la rama):** borrar rama. Te dirá un error ya que no se fusionó con la rama principal desde el repositorio local
+
+10.**git fetch --prune :** averiguar en la rama remota que cambios hay, y borra las cosas que hay que borrar (como las ramas que ya no se van a utilizar). Esto hace que ya no tengas el error al borrar la rama
+
+11.**git pull :** descarga los cambios encontrados y los integra en la rama principal
+
+## Trabajar en grupo en github
+
+En github, puedes ir a settings/colaborators para agregar más personas a un repositorio. 
+
+Cuando finalmente estés invitado y estés dentro del repositorio del lider, se debe agregar el repositorio en la computadora local.
+
+### Proceso
+1.Crea una nueva carpeta en documentos desde la terminal
+**mkdir (Nombre de la carpeta):** se usa para crear una nueva carpeta
+
+2.Luego entras a la carpeta y luego a la carpeta del repositorio
+**cd (Nombre de la carpeta)**
+**cd (Nombre del repositorio)**
+
+3.Clonar el repositorio de github a nuestra computadora local
+**git clone (link del SSH que se encuentra en github <>Code):** crear un nuevo repositorio y ligarlo al de github
+
+4.Crea una nueva rama en ese repositorio
+**git checkout -b (Nombre de la rama)**
+
+5.Abres el archivo del repositorio y asi lo editas normal
+
+6.Despues solo tienes que darle add→commit→push para mandar los cambios
+
+7.Luego en github debes darle en pull request para mandarle los cambios al supervisor.
+
+8.El supervisor se encargará de checar los cambios y fusionar los cambios con la rama main. 
+
+9.Una vez que veas que el supervisor acepte todos los cambios, puede que borre tu rama. Por eso cambiate a la rama main
+**git checkout main**
+
+10.Depues actualiza los documentos con…
+**git fetch --prune**
+
+11.Descarga los cambios
+**git pull**
+
+12.Y finalmente borra tu rama desde tu computadora local
+**git branch -d (nombre de la rama)**
 
 
 ## Referencias o guias
